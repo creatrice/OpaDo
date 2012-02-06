@@ -139,14 +139,13 @@ ul#todo_list input[type="checkbox"]{
   position:relative;
   display:inline-block;
 }
-ul#todo_list .icon.icon-remove {
-  float:right;
+ul#todo_list .icon {
   display:none;
   margin: 4px 0;
   position:relative;
 }
 
-ul#todo_list .display:hover .icon.icon-remove {display:inline-block;}
+ul#todo_list .display:hover .icon {display:inline-block;}
 
 .todo_content {padding:0 3px;font-size:18px; line-height:22px;color:#6C6B66;}
 

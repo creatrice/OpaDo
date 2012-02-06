@@ -98,7 +98,10 @@ module Todo {
         line =
           <li><div class="todo {if (is_done) "done" else ""}" id={ id }>
             <div class="display">
-              <span id={id^"_destroy"} class="todo_destroy icon icon-remove" onclick={function(_){remove_item(id)}}></span>
+              <div class="pull-right">
+                   <span class="icon icon-darkgray icon-mail-closed" title="Share"></span>
+                   <span id={id^"_destroy"} class="todo_destroy icon icon-darkgray icon-trash" onclick={function(_){remove_item(id)}} title="Remove"></span>
+              </div>
               <input class="check" type="checkbox" onclick={function(_){make_done(id)}}/>
               <div id={id^"_todo"} class="todo_content" onclick={function(_){make_editable(id, value)}}>{ value }</div>
             </div>
